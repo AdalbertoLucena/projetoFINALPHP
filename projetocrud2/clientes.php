@@ -1,38 +1,35 @@
-<?php
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formulário de Cadastro</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="form-container">
+<h1>Cadastro</h1>
+<form action="/submit" method="post"><br><br>
 
-    require_once "admin/config.inc.php";
+<label for="nome">Nome:</label>
+<input type="text" id="nome" name="nome" required><br><br>
 
-    $sql = "SELECT * FROM clientes";
-    $resultado = mysqli_query($conexao, $sql);
 
-    if(mysqli_num_rows($resultado) > 0){
+<label for="email">E-mail:</label>
+<input type="email" id="email" name="email" required><br><br>
 
-    echo "<h1>Clientes</h1>";
-?>
-<table class="table table-bordered">
-    <thead>
-        <tr>
-            <th>Cliente</th>
-            <th>Cidade</th>
-            <th>Estado</th>
-        </r
-    </thead>
-    <tbody>
-    <?php
-        while($dados = mysqli_fetch_array($resultado)){
-    ?>
-        <tr>
-            <td><?=$dados['cliente']?></td>
-            <td><?=$dados['cidade']?></td>
-            <td><?=$dados['estado']?></td>
-        </tr>
-    <?php
-        }
-    ?>
-    </tbody>
-</table>
-<?php
-    }else{
-        echo "<h2>Nenhum cliente cadastrado no momento.</h2>";
-    }
 
+<label for="senha">Senha:</label>
+<input type="password" id="senha" name="senha" required><br><br>
+
+
+<label for="confirma-senha">Confirme a Senha:</label>
+<input type="password" id="confirma-senha" name="confirma-senha" required><br><br>
+
+
+<button type="submit">Cadastrar</button>
+<button type="reset">Limpar</button>
+</form>
+</div>
+</body>
+</html>

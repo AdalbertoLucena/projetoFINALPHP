@@ -13,5 +13,5 @@
     }
 
     include_once "rodape.php";
- include_once "rodape.php";
+
  ?>
