@@ -1,35 +1,60 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Formulário de Cadastro</title>
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
-<div class="form-container">
-<h1>Cadastro</h1>
-<form action="/submit" method="post"><br><br>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<label for="nome">Nome:</label>
-<input type="text" id="nome" name="nome" required><br><br>
+    <title>Cadastro</title>
 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  </head>
 
-<label for="email">E-mail:</label>
-<input type="email" id="email" name="email" required><br><br>
+ <body>
+    <div class="container mt-4">
+       <div class="row">
+          <div class="col-md-6">
+             <h1>Cadastro</h1>
 
+             
+             <form method="POST" action="cadrastro.php">
 
-<label for="senha">Senha:</label>
-<input type="password" id="senha" name="senha" required><br><br>
+                <div class="form-group">
+                   <label for="nome">Nome Completo</label>
+                   <input type="text" class="form-control" name="nome" require>
+                </div>
 
+                <div class="form-group">
+                   <label for="endereco">Endereço</label>
+                   <input type="text" class="form-control" name="endereco" require>
+                </div>
 
-<label for="confirma-senha">Confirme a Senha:</label>
-<input type="password" id="confirma-senha" name="confirma-senha" required><br><br>
+                <div class="form-group">
+                   <label for="telefone">Telefone</label>
+                   <input type="text" class="form-control" name="telefone" require>
+                </div>
 
+                <div class="form-group">
+                   <label for="email">Email</label>
+                   <input type="email" class="form-control" name="email" require>
+                </div>
 
-<button type="submit">Cadastrar</button>
-<button type="reset">Limpar</button>
-</form>
-</div>
-</body>
+                <div class="form-group">
+                   <label for="data_nascimento">Data de Nascimento</label>
+                   <input type="date" class="form-control" name="data_nascimento" require>
+                </div>
+
+                <div class="form-group">
+                   <input type="submit" class="btn btn-success" value="Salvar">
+                </div>
+
+             </form>
+
+          </div>
+       </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  </body>
 </html>
