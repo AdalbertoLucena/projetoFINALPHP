@@ -19,6 +19,7 @@
       <button type="button" data-bs-target="#demo" data-bs-slide-to="3" aria-label="Slide 4"></button>
       <button type="button" data-bs-target="#demo" data-bs-slide-to="4" aria-label="Slide 5"></button>
       <button type="button" data-bs-target="#demo" data-bs-slide-to="5" aria-label="Slide 6"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="5" aria-label="Slide 7"></button>
     </div>
 
     <!-- Slides -->
@@ -90,6 +91,16 @@
   </div>
 </div>
 
+    <div class="carousel-item">
+  <div class="d-flex justify-content-center align-items-center vh-100 w-100">
+    <img src="https://assets.gcs.ehi.com/content/enterprise_cros/data/vehicle/bookingCountries/US/CARS/WCAR.doi.768.high.imageSmallThreeQuarterNodePath.png/1753220631881.png" 
+         class="img-fluid" style="max-width: 80%; height: auto;" alt="Carro Premium">
+  </div>
+  <div class="carousel-caption d-none d-md-block">
+    <h1 class="display-4 fw-bold">Outra Cidade</h1>
+    <p class="lead">Outra descrição aqui!</p>
+  </div>
+</div>
 
 
     </div>
