@@ -8,10 +8,9 @@
 </head>
 <body class="bg-dark">
 
-  <!-- Carousel Fullscreen / Centralizado -->
   <div id="demo" class="carousel slide" data-bs-ride="carousel">
 
-    <!-- Indicadores (adicionei o 4º) -->
+
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active" aria-label="Slide 1"></button> <!-- Removi aria-current desnecessário -->
       <button type="button" data-bs-target="#demo" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -19,10 +18,9 @@
       <button type="button" data-bs-target="#demo" data-bs-slide-to="3" aria-label="Slide 4"></button>
       <button type="button" data-bs-target="#demo" data-bs-slide-to="4" aria-label="Slide 5"></button>
       <button type="button" data-bs-target="#demo" data-bs-slide-to="5" aria-label="Slide 6"></button>
-      <button type="button" data-bs-target="#demo" data-bs-slide-to="6" aria-label="Slide 7"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="5" aria-label="Slide 7"></button>
     </div>
 
-    <!-- Slides -->
     <div class="carousel-inner">
 
       <div class="carousel-item active">
@@ -61,10 +59,9 @@
       <div class="carousel-item">
         <div class="d-flex justify-content-center align-items-center vh-100 w-100">
           <img src="https://assets.gcs.ehi.com/content/enterprise_cros/data/vehicle/bookingCountries/US/SUVS/PGAR.doi.768.high.imageSmallThreeQuarterNodePath.png/1740004423988.png" 
-               class="img-fluid" style="max-width: 80%; height: auto;" alt="Carro Premium"> <!-- Removi o "100´px" inválido; corrigi alt genérico -->
-        </div>
+               class="img-fluid" style="max-width: 80%; height: auto;" alt="Carro Premium">
         <div class="carousel-caption d-none d-md-block">
-          <h1 class="display-4 fw-bold">Outra Cidade</h1> <!-- Mudei para evitar repetição; ajuste conforme necessário -->
+          <h1 class="display-4 fw-bold">Outra Cidade</h1> 
           <p class="lead">Outra descrição aqui!</p>
         </div>
       </div>
@@ -105,7 +102,7 @@
 
     </div>
 
-    <!-- Controles esquerdo/direito -->
+  
      
     <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
