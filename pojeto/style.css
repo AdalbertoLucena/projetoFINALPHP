@@ -73,6 +73,23 @@ header section{
 
 
 .icons {
+ 
+
+
+
+
+}
+
+
+.btn{
+    background-color: yellow;
+  color: #40ff00;
+  padding: 1rem 3rem;
+  font-size: 1.7rem;
+  cursor: pointer;
+  margin-top: 1rem;
+
+
 
 
 
@@ -85,6 +102,55 @@ header section{
   text-transform: uppercase;
 
 }
+
+.menu .box-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
+  gap: 1.5rem;
+
+
+}
+
+.menu .box-container .box{
+  text-align: center;
+  border: purple;
+  padding: 5rem;
+
+}
+
+
+.menu .box-container .box:hover{
+  background-color: #fffb00;
+
+}
+
+.menu .box-container .box:hover>*{
+  color: #fa0808;
+}
+
+.menu .box-container img{
+  height: 20rem;
+
+}
+
+.menu .box-container .box h3{
+  color: #fff;
+  font-size: 2rem;
+  padding: 1rem 0;
+
+}
+
+.menu .box-container .box .preço{
+  color: #fff;
+  font-size: 2.5rem;
+  padding: 3.5rem 0;
+  text-align: center;
+
+}
+
+
+
+
 
 
 

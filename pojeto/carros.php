@@ -34,16 +34,82 @@
     </header> 
 
     <!-- COLOCAR IMAGEN DOS CARROS E OS VALORES -->
-    <section class="catalogo" id="catalogo">
+    <section class="menu" id="menu">
         <h2 class="title">Nosso <span>catalogo</span></h2>
         <div class="box-container">
-            <div>
-                <img src="" alt="item-1">
-                <h3>carro 1</h3>
+            <div class="box">
+               <img src="https://www.localiza.com/brasil-site/geral/Frota/HB2C.png" alt="">
+                <h3>Hyundai HB20S 1.0 2025</h3>
                 <div class="preço">R$10000</div>
                 <a href="#" class="btn">ALUGAR</a>
-
+            </div> 
+             <div class="box">
+                <img src="https://www.localiza.com/brasil-site/geral/Frota/KWID.png" alt="item-1">
+                <h3>Renault Kwid 1.0 2024</h3>
+                <div class="preço">R$10000</div>
+                <a href="#" class="btn">ALUGAR</a>
             </div>
+             <div class="box">
+                <img src="https://www.localiza.com/brasil-site/geral/Frota/GOLC.png" alt="item-1">
+                <h3>VW Gol 1.0 2022</h3>
+                <div class="preço">R$10000</div>
+                <a href="#" class="btn">ALUGAR</a>
+            </div>
+             <div class="box">
+                <img src="https://www.localiza.com/brasil-site/geral/Frota/ARGO.png" alt="item-1">
+                <h3>Fiat Argo 1.0 2023</h3>
+                <div class="preço">R$10000</div>
+                <a href="#" class="btn">ALUGAR</a>
+            </div>
+             <div class="box">
+                <img src="https://www.localiza.com/brasil-site/geral/Frota/POLO.png" alt="item-1">
+                <h3>VW Polo Hatch 1.0 Turbo 2024</h3>
+                <div class="preço">R$10000</div>
+                <a href="#" class="btn">ALUGAR</a>
+            </div>
+             <div class="box">
+                <img src="https://www.localiza.com/brasil-site/geral/Frota/CROX.png" alt="item-1">
+                <h3>Fiat Cronos 1.3 2023</h3>
+                <div class="preço">R$10000</div>
+                <a href="#" class="btn">ALUGAR</a>
+            </div>
+             <div class="box">
+                <img src="https://www.localiza.com/brasil-site/geral/Frota/ONIH.png" alt="item-1">
+                <h3>GM Onix LTZ 1.0 AT 2024</h3>
+                <div class="preço">R$10000</div>
+                <a href="#" class="btn">ALUGAR</a>
+            </div>
+             <div class="box">
+                <img src="https://www.localiza.com/brasil-site/geral/Frota/HB1X.png" alt="item-1">
+                <h3>Hyundai HB20S 1.0 Turbo AT</h3>
+                <div class="preço">R$10000</div>
+                <a href="#" class="btn">ALUGAR</a>
+            </div>
+             <div class="box">
+                <img src="https://www.localiza.com/brasil-site/geral/Frota/CROA.png" alt="item-1">
+                <h3>Fiat Cronos 1.8 Adaptado 2025</h3>
+                <div class="preço">R$10000</div>
+                <a href="#" class="btn">ALUGAR</a>
+            </div>
+             <div class="box">
+                <img src="https://www.localiza.com/brasil-site/geral/Frota/VTER.png" alt="item-1">
+                <h3>Volkswagen Tera 1.0 AT 2025</h3>
+                <div class="preço">R$10000</div>
+                <a href="#" class="btn">ALUGAR</a>
+            </div>
+             <div class="box">
+                <img src="https://www.localiza.com/brasil-site/geral/Frota/TCRO.png" alt="item-1">
+                <h3>VW T-Cross 1.0 Turbo 2025</h3>
+                <div class="preço">R$10000</div>
+                <a href="#" class="btn">ALUGAR</a>
+            </div>
+             <div class="box">
+                <img src="https://www.localiza.com/brasil-site/geral/Frota/S10X.png" alt="item-1">
+                <h3>GM S10 (aut/manual) 2024</h3>
+                <div class="preço">R$10000</div>
+                <a href="#" class="btn">ALUGAR</a>
+            </div>
+            
 
         </div>
 
