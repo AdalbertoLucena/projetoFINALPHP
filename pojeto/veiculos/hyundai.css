@@ -1,0 +1,136 @@
+/* Styles for hyundai.php - centered card with image and CTA */
+:root{
+  --bg-1: #0f1723;
+  --card-bg: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02));
+  --accent: #ffcc00;
+  --muted: #a7b0bd;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "BBH Sans Hegarty", sans-serif;
+  background: linear-gradient(180deg, #727272 0%, #000000 100%);
+  min-height: 100vh;
+  background-attachment: fixed;
+  color:#e6eef6;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+.car-page{
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:2rem;
+}
+
+.card{
+  width:100%;
+  max-width:720px;
+  background: var(--card-bg);
+  border: 1px solid rgba(255,255,255,0.06);
+  padding:2rem;
+  border-radius:16px;
+  box-shadow: 0 10px 30px rgba(2,6,23,0.6);
+  text-align:center;
+  backdrop-filter: blur(6px) saturate(120%);
+}
+
+.car-title{
+  margin:0 0 1rem 0;
+  font-size:1.8rem;
+  letter-spacing:0.4px;
+  color:#fff;
+}
+
+.image-wrap{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:0.5rem 0 1rem 0;
+}
+
+.car-image{
+  width:100%;
+  max-width:560px;
+  height:auto;
+  border-radius:10px;
+  border: 1px solid rgba(255,255,255,0.04);
+  box-shadow: 0 8px 20px rgba(2,6,23,0.6);
+  transition: transform .35s cubic-bezier(.2,.9,.3,1), box-shadow .35s;
+}
+.car-image:hover{transform:translateY(-6px) scale(1.01); box-shadow: 0 18px 40px rgba(2,6,23,0.7)}
+
+.price{
+  color:var(--muted);
+  margin:0.8rem 0 1.4rem 0;
+  font-size:1.2rem;
+}
+
+.btn{
+  display:inline-block;
+  text-decoration:none;
+  padding:0.95rem 1.6rem;
+  border-radius:10px;
+  font-weight:600;
+  letter-spacing:0.6px;
+}
+
+/* keep form inline so button size/placement stays the same */
+.reserve-form{display:inline-block;margin:0}
+
+.reserve-form label{
+  display:block;
+  font-size:0.9rem;
+  color:var(--muted);
+  margin-bottom:0.25rem;
+}
+.reserve-form .dias-input{
+  width:74px;
+  padding:0.4rem 0.6rem;
+  margin-right:0.6rem;
+  border-radius:8px;
+  border:1px solid rgba(255,255,255,0.04);
+  background:transparent;
+  color:inherit;
+  font-weight:600;
+}
+.reserve-form .dias-input::-webkit-outer-spin-button, .reserve-form .dias-input::-webkit-inner-spin-button{ -webkit-appearance: none; margin: 0; }
+
+.btn-primary{
+  background: linear-gradient(90deg, #ffb84d, #ffcc00 60%);
+  color:#081021;
+  border: 1px solid rgba(0,0,0,0.12);
+  box-shadow: 0 8px 24px rgba(255,188,70,0.14), inset 0 -2px 0 rgba(0,0,0,0.06);
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+
+.btn-primary:hover{transform:translateY(-4px); box-shadow: 0 20px 40px rgba(255,176,50,0.18)}
+
+@media (max-width:600px){
+  .card{padding:1.2rem;border-radius:12px}
+  .car-title{font-size:1.4rem}
+  .btn{width:100%;display:block}
+}
+
+/* Description / features */
+.description{
+  margin:0.8rem auto 1.2rem auto;
+  max-width:680px;
+  text-align:left;
+  color:#d7e6f5;
+  background: rgba(255,255,255,0.02);
+  border: 1px solid rgba(255,255,255,0.03);
+  padding:0.9rem 1rem;
+  border-radius:8px;
+}
+.description p{margin:0 0 0.6rem 0; color:#cbd7e6; line-height:1.45}
+.features{list-style:none; padding:0; margin:0; display:flex; gap:1rem; flex-wrap:wrap}
+.features li{background: rgba(255,255,255,0.01); padding:0.45rem 0.75rem; border-radius:6px; font-size:0.95rem; color:#bcd0e9}
+
+@media (max-width:420px){
+  .features{flex-direction:column; gap:0.45rem}
+}

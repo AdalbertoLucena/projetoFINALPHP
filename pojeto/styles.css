@@ -23,8 +23,9 @@
 }
 
 body{
-  background-color: #136224;
-
+  background: linear-gradient(180deg, #000000 0%, #727272 100%);
+  min-height: 100vh;
+  background-attachment: fixed;
 }
 
 section{
@@ -63,7 +64,7 @@ header section{
 }
 
 .navbar a:hover {
-  color: rgb(225, 255, 1);
+  color: rgb(255, 1, 1);
   border-bottom: var(--border);
   padding-bottom: 0.5rem;
   font-size: 2rem;
@@ -120,7 +121,7 @@ header section{
 
 
 .menu .box-container .box:hover{
-  background-color: #fffb00;
+  background-color: gray;
 
 }
 
