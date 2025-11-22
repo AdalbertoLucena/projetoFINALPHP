@@ -42,7 +42,7 @@ if (!isset($_SESSION)) session_start();
       // USUÁRIO NÃO LOGADO → MOSTRA "CADASTRO"
       if (empty($_SESSION['usuario'])): ?>
 
-          <a class="btn btn-outline-light fw-bold" href="cadastro_formulario.php">
+          <a class="btn btn-outline-light fw-bold" href="cadastro_log.php">
             Cadastro
           </a>
 

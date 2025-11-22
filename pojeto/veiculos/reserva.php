@@ -1,3 +1,12 @@
+<?php/*
+session_start();
+
+if (!isset($_SESSION['usuario_id'])) {
+    header("Location: ../cadastro_formulario.php");
+    exit;
+}*/
+?>
+
 <?php
 function fmtBR($n){
     return 'R$ '.number_format((float)$n, 2, ',', '.');

@@ -40,6 +40,11 @@
     <div class="form-group">
        <label for="email">Email</label>
        <input type="email" class="form-control" name="email" required>
+    </div> 
+
+   <div class="form-group">
+       <label for="senha">Senha</label>
+       <input type="text" class="form-control" name="senha" required>
     </div>
 
     <div class="form-group">
