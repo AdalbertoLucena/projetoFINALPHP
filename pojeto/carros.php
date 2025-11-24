@@ -1,14 +1,12 @@
 <?php
+// Protege a página para apenas usuários logados
 session_start();
 
-// Se o usuário NÃO estiver logado, redireciona
+// Se o usuário não estiver logado, redireciona para cadastro_log.php
 if (!isset($_SESSION['usuario_id'])) {
     header("Location: ../cadastro/cadastro_log.php");
     exit;
 }
-
-// Inclui o arquivo de login (se necessário)
-include "../cadastro/cadastro_log.php";
 ?>
 
 
@@ -133,4 +131,3 @@ include "../cadastro/cadastro_log.php";
     </section>
 
 </body>
-</html>
