@@ -64,7 +64,7 @@ header section{
 }
 
 .navbar a:hover {
-  color: rgb(255, 1, 1);
+  color: lightslategray;
   border-bottom: var(--border);
   padding-bottom: 0.5rem;
   font-size: 2rem;
@@ -83,8 +83,8 @@ header section{
 
 
 .btn{
-    background-color: yellow;
-  color: #40ff00;
+    background-color: black;
+  color: #fff;
   padding: 1rem 3rem;
   font-size: 1.7rem;
   cursor: pointer;
@@ -98,9 +98,11 @@ header section{
 
 .title {
   font-size: 4rem;
-  color: yellow;
+  color: rgba(77, 209, 117, 0.699);
   text-align: center;
   text-transform: uppercase;
+  text-align: center;
+   padding-bottom: 0.5rem;
 
 }
 
@@ -126,7 +128,7 @@ header section{
 }
 
 .menu .box-container .box:hover>*{
-  color: #fa0808;
+  color: rgba(77, 209, 117, 0.699);
 }
 
 .menu .box-container img{
