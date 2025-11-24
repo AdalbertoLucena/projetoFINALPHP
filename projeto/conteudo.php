@@ -25,7 +25,7 @@
             <div class="carousel-item active">
                 <div class="d-flex justify-content-center align-items-center vh-100 w-100">
                     <img src="https://www.enterprise.com/content/dam/ecom/utilitarian/common/exotics/car-thumbnails/Aston-Martin-DBX_HERO-THUMBNAIL_2048x1360.png" 
-                        class="img-fluid" style="max-width: 80%; height: auto;" alt="Aston Martin DBX">
+                        class="img-fluid" style="max-width: 40%; height: auto;" alt="Aston Martin DBX">
                 </div>
                 <div class="carousel-caption d-none d-md-block">
                     <h1 class="display-4 fw-bold">Los Angeles</h1>
@@ -36,7 +36,7 @@
             <div class="carousel-item">
                 <div class="d-flex justify-content-center align-items-center vh-100 w-100">
                     <img src="https://www.enterprise.com/content/dam/ecom/utilitarian/common/exotics/us-refresh/car-thumbnails/thumbnail-2018-aston-martin-vantage-2048x1360.png" 
-                        class="img-fluid" style="max-width: 80%; height: auto;" alt="Aston Martin Vantage">
+                        class="img-fluid" style="max-width: 40%; height: auto;" alt="Aston Martin Vantage">
                 </div>
                 <div class="carousel-caption d-none d-md-block">
                     <h1 class="display-4 fw-bold">Chicago</h1>
@@ -47,7 +47,7 @@
             <div class="carousel-item">
                 <div class="d-flex justify-content-center align-items-center vh-100 w-100">
                     <img src="https://www.enterprise.com/content/dam/ecom/utilitarian/common/exotics/us-refresh/car-thumbnails/thumbnail-2020-audi-a5-coupe-2048x1360.png" 
-                        class="img-fluid" style="max-width: 80%; height: auto;" alt="Audi A5 Coupe">
+                        class="img-fluid" style="max-width: 40%; height: auto;" alt="Audi A5 Coupe">
                 </div>
                 <div class="carousel-caption d-none d-md-block">
                     <h1 class="display-4 fw-bold">New York</h1>
@@ -58,7 +58,7 @@
             <div class="carousel-item">
                 <div class="d-flex justify-content-center align-items-center vh-100 w-100">
                     <img src="https://assets.gcs.ehi.com/content/enterprise_cros/data/vehicle/bookingCountries/US/SUVS/PGAR.doi.768.high.imageSmallThreeQuarterNodePath.png/1740004423988.png" 
-                        class="img-fluid" style="max-width: 80%; height: auto;" alt="Carro Premium SUV">
+                        class="img-fluid" style="max-width: 40%; height: auto;" alt="Carro Premium SUV">
                 </div>
                 <div class="carousel-caption d-none d-md-block">
                     <h1 class="display-4 fw-bold">Outra Cidade A</h1> 
@@ -69,7 +69,7 @@
             <div class="carousel-item">
                 <div class="d-flex justify-content-center align-items-center vh-100 w-100">
                     <img src="https://assets.gcs.ehi.com/content/enterprise_cros/data/vehicle/bookingCountries/US/CARS/PCAR.doi.768.high.imageSmallThreeQuarterNodePath.png/1740004172813.png" 
-                        class="img-fluid" style="max-width: 80%; height: auto;" alt="Carro Premium Sedã">
+                        class="img-fluid" style="max-width: 40%; height: auto;" alt="Carro Premium Sedã">
                 </div>
                 <div class="carousel-caption d-none d-md-block">
                     <h1 class="display-4 fw-bold">Outra Cidade B</h1>
@@ -80,7 +80,7 @@
             <div class="carousel-item">
                 <div class="d-flex justify-content-center align-items-center vh-100 w-100">
                     <img src="https://assets.gcs.ehi.com/content/enterprise_cros/data/vehicle/bookingCountries/US/CARS/WCAR.doi.768.high.imageSmallThreeQuarterNodePath.png/1753220631881.png" 
-                        class="img-fluid" style="max-width: 80%; height: auto;" alt="Carro Grande">
+                        class="img-fluid" style="max-width: 40%; height: auto;" alt="Carro Grande">
                 </div>
                 <div class="carousel-caption d-none d-md-block">
                     <h1 class="display-4 fw-bold">Outra Cidade C</h1>
@@ -91,7 +91,7 @@
             <div class="carousel-item">
                 <div class="d-flex justify-content-center align-items-center vh-100 w-100">
                     <img src="https://assets.gcs.ehi.com/content/enterprise_cros/data/vehicle/bookingCountries/US/CARS/WCAR.doi.768.high.imageSmallThreeQuarterNodePath.png/1753220631881.png" 
-                        class="img-fluid" style="max-width: 80%; height: auto;" alt="Carro Grande Repetido">
+                        class="img-fluid" style="max-width: 40%; height: auto;" alt="Carro Grande Repetido">
                 </div>
                 <div class="carousel-caption d-none d-md-block">
                     <h1 class="display-4 fw-bold">Outra Cidade D (Repetido)</h1>
