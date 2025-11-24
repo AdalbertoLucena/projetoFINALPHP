@@ -1,4 +1,16 @@
-#< include "cadastro_verificar.php"; ?>
+<?php
+session_start();
+
+// Se o usuário NÃO estiver logado, redireciona
+if (!isset($_SESSION['usuario_id'])) {
+    header("Location: ../cadastro/cadastro_log.php");
+    exit;
+}
+
+// Inclui o arquivo de login (se necessário)
+include "../cadastro/cadastro_log.php";
+?>
+
 
 <!DOCTYPE html>
 <html lang="pt-br">
