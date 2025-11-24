@@ -13,7 +13,7 @@
     <div class="container-fluid">
         <h1>
             <?php
-            $nome_site = "Site Institucionaaaaaaaaal";
+            $nome_site = "ALUGA PB";
                 echo "$nome_site";
             ?>
         </h1>
