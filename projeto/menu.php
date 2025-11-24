@@ -13,6 +13,9 @@ if (!isset($_SESSION)) session_start();
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=BBH+Sans+Hegarty&display=swap" rel="stylesheet">
+  <style>
+    .avatar-img { width: 40px; height: 40px; border-radius: 50%; object-fit: cover; }
+  </style>
 </head>
 
 <body class="bg-dark text-white">
@@ -44,24 +47,24 @@ if (!isset($_SESSION)) session_start();
             Cadastro
           </a>
 
-      <?php 
-      // SE ESTÁ LOGADO, MOSTRA FOTO E BOTÃO SAIR
-      else:  
+      <?php else:  
+          // Pasta onde estão as fotos de cadastro
+          $pasta_fotos = "../cadastro/img/"; 
 
-          if (!empty($_SESSION['foto']) && file_exists("img/" . $_SESSION['foto'])): ?>
+          // Foto do usuário, pega apenas o nome do arquivo
+          $foto_usuario = !empty($_SESSION['foto']) ? $pasta_fotos . basename($_SESSION['foto']) : '';
 
-              <a href="perfil.php">
-                <img src="img/<?=$_SESSION['foto']?>" class="avatar-img">
-              </a>
+          // Verifica se existe arquivo, senão usa imagem padrão
+          if (!empty($foto_usuario) && file_exists($foto_usuario)) {
+              $foto_html = $foto_usuario;
+          } else {
+              $foto_html = "img/padrao.png"; // caminho da imagem padrão
+          }
+      ?>
 
-          <?php else: ?>
-
-              <a href="perfil.php">
-                <img src="img/padrao.png" class="avatar-img">
-              </a>
-
-          <?php endif; ?>
-
+          <a href="perfil.php">
+            <img src="<?= $foto_html ?>" class="avatar-img" alt="Foto do usuário">
+          </a>
           <a href="logout.php" class="btn btn-danger ms-3 fw-bold">Sair</a>
 
       <?php endif; ?>

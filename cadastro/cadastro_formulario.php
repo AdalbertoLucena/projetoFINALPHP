@@ -19,7 +19,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $data_nascimento = $_POST['data_nascimento'];
 
     // mover foto usando a função correta
-    $foto = mover_foto($_FILES['foto']); // foto ou null
+    $foto = mover_foto($_FILES['foto']); // retorna nome do arquivo ou null
+
+    // Se não enviou foto, usa a imagem padrão
+    if (empty($foto)) {
+        $foto = "padrao.png"; // arquivo que deve existir em ../cadastro/img/
+    }
 
     // hash da senha
     $senha_hash = password_hash($senha, PASSWORD_DEFAULT);
@@ -48,6 +53,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // criar sessão
     $_SESSION['usuario_id'] = mysqli_insert_id($conn);
     $_SESSION['usuario_nome'] = $nome;
+    $_SESSION['foto'] = $foto;
 
     mysqli_stmt_close($stmt);
 
@@ -90,12 +96,13 @@ if (!empty($_SESSION['msg'])) {
 <input type="text" name="nome" placeholder="Nome Completo">
 <input type="text" name="endereco" placeholder="Endereço">
 <input type="tel" name="telefone" placeholder="Telefone">
-<input type="email" name="email" placeholder="Email" >
-<input type="password" name="senha" placeholder="Senha" >
+<input type="email" name="email" placeholder="Email">
+<input type="password" name="senha" placeholder="Senha">
 <input type="date" name="data_nascimento">
 <input type="file" name="foto" accept="image/*">
 <button type="submit">Salvar</button>
 </form>
+
 <button onclick="window.location.href='cadastro_log.php'">Voltar ao Login</button>
 </div>
 
