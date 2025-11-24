@@ -5,7 +5,7 @@ if (session_status() === PHP_SESSION_NONE) {
     session_start();
 }
 
-include_once __DIR__ . "cadastro_banco.php";
+include_once __DIR__ . "/cadastro_banco.php";
 
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     header("Location: cadastro_formulario.php");

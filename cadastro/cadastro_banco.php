@@ -1,64 +1,51 @@
 <?php
-// cadastro_envio.php - insere novo usuário no banco
-if (session_status() === PHP_SESSION_NONE) {
-    session_set_cookie_params(['path' => '/']);
-    session_start();
-}
 
-include_once __DIR__ . "/cadastro_banco.php";
+$server = "localhost";
+$bancodedados = "clientes";
+$usuario = "root";
+$senha = "";
 
-if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
-    header("Location: cadastro_formulario.php");
+$conn = mysqli_connect($server, $usuario, $senha, $bancodedados);
+
+if (!$conn) {
+    echo "Erro na conexão com o banco!";
     exit;
 }
 
-// Ler e sanitizar campos
-$nome = isset($_POST['nome']) ? trim($_POST['nome']) : '';
-$email = isset($_POST['email']) ? trim($_POST['email']) : '';
-$senha = isset($_POST['senha']) ? trim($_POST['senha']) : '';
-
-// Validações simples
-if ($nome === '' || $email === '' || $senha === '') {
-    $_SESSION['msg'] = 'Preencha todos os campos.';
-    header("Location: cadastro_formulario.php");
-    exit;
+function mensagem($texto, $tipo) {
+    echo "<div class='alert alert-$tipo' role='alert'>
+           $texto       
+        </div>";
 }
 
-// Verifica se email já existe
-$checkSql = "SELECT id FROM novos WHERE email = ? LIMIT 1";
-$checkStmt = mysqli_prepare($conn, $checkSql);
-if ($checkStmt) {
-    mysqli_stmt_bind_param($checkStmt, "s", $email);
-    mysqli_stmt_execute($checkStmt);
-    $res = mysqli_stmt_get_result($checkStmt);
-    if ($res && mysqli_num_rows($res) > 0) {
-        $_SESSION['msg'] = 'Email já cadastrado.';
-        header("Location: cadastro_formulario.php");
-        exit;
+function mover_foto($vetor_foto) {
+
+    
+    if ($vetor_foto['error'] != 0 || $vetor_foto['size'] == 0) {
+        return null;
     }
-} else {
-    $_SESSION['msg'] = 'Erro interno no banco.';
-    header("Location: cadastro_formulario.php");
-    exit;
-}
 
-// Inserir novo usuário
-$insertSql = "INSERT INTO novos (nome, email, senha) VALUES (?, ?, ?)";
-$insStmt = mysqli_prepare($conn, $insertSql);
-if ($insStmt) {
-    mysqli_stmt_bind_param($insStmt, "sss", $nome, $email, $senha);
-    if (mysqli_stmt_execute($insStmt)) {
-        $_SESSION['msg'] = 'Cadastro realizado. Faça login.';
-        header("Location: login.php");
-        exit;
-    } else {
-        $_SESSION['msg'] = 'Erro ao salvar no banco.';
-        header("Location: cadastro_formulario.php");
-        exit;
+    
+    $tipoCompleto = $vetor_foto['type']; // ex: image/jpeg
+    $partes = explode("/", $tipoCompleto);
+
+    if ($partes[0] != "image") {
+        return null;
     }
-} else {
-    $_SESSION['msg'] = 'Erro interno no banco.';
-    header("Location: cadastro_formulario.php");
-    exit;
+
+   
+    $nome_arquivo = date('YmdHis') . "_" . rand(1000, 9999) . ".jpg";
+
+    
+    if (!is_dir("img")) {
+        mkdir("img", 0777, true);
+    }
+
+    
+    if (move_uploaded_file($vetor_foto['tmp_name'], "img/" . $nome_arquivo)) {
+        return $nome_arquivo;
+    }
+
+    return null;
 }
 ?>

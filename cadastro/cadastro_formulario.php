@@ -1,7 +1,4 @@
 <?php
-session_start();
-require "cadastro_banco.php"; // conexão e funções
-
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     $nome = $_POST['nome'];
@@ -12,7 +9,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $data_nascimento = $_POST['data_nascimento'];
 
     // mover foto usando sua função
-    $foto = mover_foto($_FILES['foto']);
+    $foto = mover_foto($_FILES['img']);
 
     // hash da senha
     $senha_hash = password_hash($senha, PASSWORD_DEFAULT);
@@ -35,7 +32,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $_SESSION['usuario_nome'] = $nome;
 
     // redireciona para index da pasta projeto
-    header("Location: ../pojeto/index.php");
+    header("Location: ../projeto/index.php");
     exit;
 }
 ?>

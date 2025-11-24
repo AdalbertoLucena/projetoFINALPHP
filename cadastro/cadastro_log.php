@@ -1,43 +1,3 @@
-<?php
-session_start();
-require "cadastro_banco.php"; // conexão procedural ($conn)
-
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $email = $_POST['email'];
-    $senha = $_POST['senha'];
-
-    // prepara a query
-    $sql = "SELECT * FROM novos WHERE email = ?";
-    $stmt = mysqli_prepare($conn, $sql);
-    if (!$stmt) {
-        die("Erro no prepare: " . mysqli_error($conn));
-    }
-
-    mysqli_stmt_bind_param($stmt, "s", $email);
-    mysqli_stmt_execute($stmt);
-    $resultado = mysqli_stmt_get_result($stmt);
-
-    if ($resultado && mysqli_num_rows($resultado) == 1) {
-        $user = mysqli_fetch_assoc($resultado);
-
-        // se não estiver usando hash
-        if ($senha == $user['senha']) {
-            $_SESSION['usuario_id'] = $user['id'];
-            $_SESSION['usuario_nome'] = $user['nome'];
-
-            // redireciona para index da pasta projeto
-            header("Location: ../projeto/index.php");
-            exit;
-        } else {
-            echo "Senha incorreta!";
-        }
-    } else {
-        echo "Usuário não encontrado!";
-    }
-}
-?>
-
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -129,7 +89,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <div class="box">
 
     <!-- X para voltar ao INDEX na pasta /projeto -->
-    <a href="../pojeto/index.php" class="fechar">×</a>
+    <a href="../projeto/index.php" class="fechar">×</a>
 
     <h2>Login</h2>
 
