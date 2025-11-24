@@ -48,17 +48,14 @@ if (!isset($_SESSION)) session_start();
           </a>
 
       <?php else:  
-          // Pasta onde estão as fotos de cadastro
-          $pasta_fotos = "../cadastro/img/"; 
+          // Caminho relativo à página que renderiza o menu
+          $pasta_fotos = "../cadastro/img/";
 
-          // Foto do usuário, pega apenas o nome do arquivo
-          $foto_usuario = !empty($_SESSION['foto']) ? $pasta_fotos . basename($_SESSION['foto']) : '';
-
-          // Verifica se existe arquivo, senão usa imagem padrão
-          if (!empty($foto_usuario) && file_exists($foto_usuario)) {
-              $foto_html = $foto_usuario;
+          // Verifica se existe a foto do usuário
+          if (!empty($_SESSION['foto']) && file_exists($pasta_fotos . $_SESSION['foto'])) {
+              $foto_html = $pasta_fotos . $_SESSION['foto'];
           } else {
-              $foto_html = "img/padrao.png"; // caminho da imagem padrão
+              $foto_html = $pasta_fotos . "padrao.png"; // imagem padrão
           }
       ?>
 

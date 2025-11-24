@@ -1,3 +1,4 @@
+<?php include "cadastro_verificar.php"; ?>
 
 <!DOCTYPE html>
 <html lang="pt-br">
