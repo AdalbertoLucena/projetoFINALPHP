@@ -1,12 +1,13 @@
-<?php/*
+<?php
+// Protege a página para apenas usuários logados
 session_start();
 
+// Se o usuário não estiver logado, redireciona para cadastro_log.php
 if (!isset($_SESSION['usuario_id'])) {
-    header("Location: ../cadastro_formulario.php");
+    header("Location: .../cadastro/cadastro_log.php");
     exit;
-}*/
+}
 ?>
-
 
 <!DOCTYPE html>
 <html lang="pt-br">
