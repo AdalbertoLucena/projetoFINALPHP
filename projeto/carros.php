@@ -31,7 +31,7 @@
             <a href="#">Home</a>
             <a href="#">suvs</a>
             <a href="#">Sedans</a>
-            <a href="#">Sportivos</a>
+            <a href="#">Sportivoss</a>
 
         </nav>
 
