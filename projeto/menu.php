@@ -8,13 +8,25 @@ if (!isset($_SESSION)) session_start();
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Navbar</title>
-  <link rel="stylesheet" href="styles.css">
+
+  <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Google Fonts: Raleway -->
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=BBH+Sans+Hegarty&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+
   <style>
-    .avatar-img { width: 40px; height: 40px; border-radius: 50%; object-fit: cover; }
+    body, .navbar, .nav-link, .navbar-brand, button {
+      font-family: 'Raleway', sans-serif;
+    }
+    .avatar-img { 
+      width: 40px; 
+      height: 40px; 
+      border-radius: 50%; 
+      object-fit: cover; 
+    }
   </style>
 </head>
 

@@ -116,7 +116,7 @@ header section{
 
 .menu .box-container .box{
   text-align: center;
-  border: purple;
+  border: rgb(0, 0, 0);
   padding: 5rem;
 
 }

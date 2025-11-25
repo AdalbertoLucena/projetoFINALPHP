@@ -1,4 +1,4 @@
-<?php
+<?php/*
 // Protege a página para apenas usuários logados
 session_start();
 
@@ -6,7 +6,7 @@ session_start();
 if (!isset($_SESSION['usuario_id'])) {
     header("Location: ../cadastro/cadastro_log.php");
     exit;
-}
+}*/
 ?>
 
 <!DOCTYPE html>
@@ -18,7 +18,11 @@ if (!isset($_SESSION['usuario_id'])) {
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=BBH+Sans+Hegarty&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
-    <title>ALUGAR PB</title>
+    
+
+
+<title>ALUGAR PB</title>
+
     
 </head>
 <body>
@@ -47,7 +51,7 @@ if (!isset($_SESSION['usuario_id'])) {
 
     <!-- COLOCAR IMAGEN DOS CARROS E OS VALORES -->
     <section class="menu" id="menu">
-        <h2 class="title"><span>catalogoooo</span></h2>
+        <h2 class="title"><span>catalogo</span></h2>
         <div class="box-container">
             <div class="box">
                <img src="https://www.localiza.com/brasil-site/geral/Frota/HB2C.png" alt="">
