@@ -103,7 +103,7 @@ if (!empty($_SESSION['msg'])) {
 ?>
 
 <form method="POST" enctype="multipart/form-data">
-<input type="text" name="nome" placeholder="Nome Completo">
+<input type="text" name="nome" placeholder="Nme Completo">
 <input type="text" name="endereco" placeholder="Endereço">
 <input type="tel" name="telefone" placeholder="Telefone">
 <input type="email" name="email" placeholder="Email">
