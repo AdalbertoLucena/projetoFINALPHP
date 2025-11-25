@@ -1,12 +1,4 @@
-<?php/*
-// Protege a página para apenas usuários logados
-session_start();
 
-// Se o usuário não estiver logado, redireciona para cadastro_log.php
-if (!isset($_SESSION['usuario_id'])) {
-    header("Location: ../cadastro/cadastro_log.php");
-    exit;
-}*/
 ?>
 
 <!DOCTYPE html>
@@ -105,7 +97,7 @@ if (!isset($_SESSION['usuario_id'])) {
                 <img src="https://www.localiza.com/brasil-site/geral/Frota/CROA.png" alt="item-1">
                 <h3>Fiat Cronos 1.8 Adaptado 2025</h3>
                 <div class="preço">R$189,99</div>
-                <a href="veiculos/cronosadaptado.php" class="btn">ALUGAR</a>
+                <a href="veiculos/cronosadptado.php" class="btn">ALUGAR</a>
             </div>
              <div class="box">
                 <img src="https://www.localiza.com/brasil-site/geral/Frota/VTER.png" alt="item-1">
