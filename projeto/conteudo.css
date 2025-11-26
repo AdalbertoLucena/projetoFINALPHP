@@ -1,0 +1,121 @@
+/* Conteúdo: estilos para a página de carrossel */
+
+body {
+  background: linear-gradient(180deg, #000000 0%, #2f2f2f 100%);
+  color: #ffffff;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Ajusta o ajusta a aera visivel do carrosel */
+.carousel-item {
+  display: none;
+  position: relative;
+  height: calc(100vh - 80px);
+}
+
+.carousel-item.active {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-item img {
+  max-width: 52%;
+  height: auto;
+  object-fit: contain;
+  filter: saturate(1);
+  transition: transform 0.8s cubic-bezier(.2,.8,.2,1), box-shadow 0.4s ease;
+  transform-origin: center center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.45);
+}
+
+/* hover */
+.carousel-item img:hover {
+  transform: translateY(-6px) scale(1.03) rotate(0deg);
+  box-shadow: 0 22px 50px rgba(0,0,0,0.6);
+}
+
+/* Legenda com fundo transparente*/
+.carousel-caption {
+  position: absolute;
+  bottom: 6%;
+  left: 50%;
+  transform: translateX(-50%) translateY(14px);
+  background: linear-gradient(180deg, rgba(0,0,0,0.45), rgba(8,8,8,0.35));
+  padding: 16px 26px;
+  border-radius: 12px;
+  text-align: center;
+  max-width: 80vw;
+  opacity: 0;
+  transition: transform 0.6s cubic-bezier(.2,.8,.2,1), opacity 0.45s ease;
+}
+
+.carousel-item.active .carousel-caption {
+  transform: translateX(-50%) translateY(0);
+  opacity: 1;
+}
+
+.carousel-caption h1 {
+  margin: 0 0 6px 0;
+  font-size: 2rem;
+}
+
+.carousel-caption p {
+  margin: 0;
+  opacity: 0.9;
+}
+
+/* Links dos nomes dos carros */
+.carousel-caption h1 a {
+  color: #ffffff;
+  text-decoration: none;
+  border-bottom: 2px solid rgba(255,255,255,0.08);
+  padding-bottom: 4px;
+}
+
+.carousel-caption h1 a:hover {
+  color: #ffd54f;
+  border-bottom-color: rgba(255,213,79,0.8);
+}
+
+/* Controle  */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1) brightness(2);
+}
+
+.carousel-indicators [data-bs-target] {
+  background-color: rgba(255,255,255,0.6);
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  transition: transform .18s ease, background-color .18s ease;
+}
+
+.carousel-indicators button.active {
+  transform: scale(1.25);
+  background-color: #ffd54f;
+}
+
+.cta-button {
+  margin-top: 10px;
+  padding: 8px 16px;
+  font-weight: 600;
+  border-radius: 8px;
+}
+
+/* make controls more visible */
+.carousel-control-prev, .carousel-control-next {
+  width: 6%;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  filter: drop-shadow(0 2px 6px rgba(0,0,0,0.6));
+}
+
+@media (max-width: 768px) {
+  .carousel-item img { max-width: 80%; }
+  .carousel-caption h1 { font-size: 1.4rem; }
+}

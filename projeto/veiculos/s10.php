@@ -20,7 +20,7 @@ if (!isset($_SESSION['usuario_id'])) {
         <div class="card">
             <h1 class="car-title">MODELO DO CARRO</h1>
             <div class="image-wrap">
-                <img class="car-image" src="" alt="CARRO">
+                <img class="car-image" src="https://chevroletorca.com.br/uploads/products/versions/azul-eclipse-1.png" alt="CARRO">
             </div>
             <p class="price">R$ 320,00</p>
 

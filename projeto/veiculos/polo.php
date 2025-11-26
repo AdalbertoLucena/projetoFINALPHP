@@ -20,7 +20,7 @@ if (!isset($_SESSION['usuario_id'])) {
         <div class="card">
             <h1 class="car-title">MODELO DO CARRO</h1>
             <div class="image-wrap">
-                <img class="car-image" src="" alt="CARRO">
+                <img class="car-image" src="https://cdn.motor1.com/images/mgl/Ak29KP/s3/volkswagen-polo-track-2023-teste.jpg" alt="CARRO">
             </div>
             <p class="price">R$ 130,00</p>
 

@@ -17,6 +17,9 @@ if (!isset($_SESSION)) session_start();
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
 
+  <!-- Custom navbar styles -->
+  <link rel="stylesheet" href="menu-styles.css">
+
   <style>
     body, .navbar, .nav-link, .navbar-brand, button {
       font-family: 'Raleway', sans-serif;

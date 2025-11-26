@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="conteudo.css">
     <title>Carousel Centralizado</title>
 </head>
 <body class="bg-dark">
@@ -24,78 +26,85 @@
 
             <div class="carousel-item active">
                 <div class="d-flex justify-content-center align-items-center vh-100 w-100">
-                    <img src="https://www.enterprise.com/content/dam/ecom/utilitarian/common/exotics/car-thumbnails/Aston-Martin-DBX_HERO-THUMBNAIL_2048x1360.png" 
-                        class="img-fluid" style="max-width: 40%; height: auto;" alt="Aston Martin DBX">
+                    <img src="https://cronos.fiat.com.br/asset/versions/359ATH1/806.webp" 
+                        class="img-fluid" style="max-width: 40%; height: auto;" alt="cronos">
                 </div>
                 <div class="carousel-caption d-none d-md-block">
-                    <h1 class="display-4 fw-bold">Los Angeles</h1>
-                    <p class="lead">We had such a great time in LA!</p>
+                    <h1 class="display-4 fw-bold"><a class="car-link" href="detalhes.php?car=aston-db">FIAT CRONOS</a></h1>
+                    <p class="lead">2024</p>
+                    <a class="btn btn-warning cta-button" href="veiculos/cronos.php">Ver detalhes</a>
                 </div>
             </div>
 
             <div class="carousel-item">
                 <div class="d-flex justify-content-center align-items-center vh-100 w-100">
-                    <img src="https://www.enterprise.com/content/dam/ecom/utilitarian/common/exotics/us-refresh/car-thumbnails/thumbnail-2018-aston-martin-vantage-2048x1360.png" 
-                        class="img-fluid" style="max-width: 40%; height: auto;" alt="Aston Martin Vantage">
+                    <img src="https://cdn-site-seminovos.localiza.com/prd/site/anuncio/323026/hyundai-hb20s-comfort-plus-tgdi-flex-at-10-2024-branco-automatico-seminovo-323026-5bdb2648-1dae-45b6-9deb-da99fdda645e-1.jpg" 
+                        class="img-fluid" style="max-width: 40%; height: auto;" alt="Hyundai">
                 </div>
                 <div class="carousel-caption d-none d-md-block">
-                    <h1 class="display-4 fw-bold">Chicago</h1>
-                    <p class="lead">Thank you, Chicago!</p>
+                    <h1 class="display-4 fw-bold"><a class="car-link" href="veiculos/hyundai.php">Hyundai</a></h1>
+                    <p class="lead">2024</p>
+                    <a class="btn btn-warning cta-button" href="veiculos/hyundai.php">Ver detalhes</a>
                 </div>
             </div>
 
             <div class="carousel-item">
                 <div class="d-flex justify-content-center align-items-center vh-100 w-100">
-                    <img src="https://www.enterprise.com/content/dam/ecom/utilitarian/common/exotics/us-refresh/car-thumbnails/thumbnail-2020-audi-a5-coupe-2048x1360.png" 
-                        class="img-fluid" style="max-width: 40%; height: auto;" alt="Audi A5 Coupe">
+                    <img src="https://free.citycaraluguel.com.br/wp-content/uploads/2024/06/polo-track60c869f1b65c6148b0fa39064d020195-1024x474.png" 
+                        class="img-fluid" style="max-width: 40%; height: auto;" alt="polo">
                 </div>
                 <div class="carousel-caption d-none d-md-block">
-                    <h1 class="display-4 fw-bold">New York</h1>
-                    <p class="lead">We love the Big Apple!</p>
+                    <h1 class="display-4 fw-bold"><a class="car-link" href="detalhes.php?car=audi-a5">VW POLO</a></h1>
+                    <p class="lead">2023</p>
+                    <a class="btn btn-warning cta-button" href="veiculos/polo.php">Ver detalhes</a>
                 </div>
             </div>
 
             <div class="carousel-item">
                 <div class="d-flex justify-content-center align-items-center vh-100 w-100">
-                    <img src="https://assets.gcs.ehi.com/content/enterprise_cros/data/vehicle/bookingCountries/US/SUVS/PGAR.doi.768.high.imageSmallThreeQuarterNodePath.png/1740004423988.png" 
-                        class="img-fluid" style="max-width: 40%; height: auto;" alt="Carro Premium SUV">
+                    <img src="https://storage.googleapis.com/dealersites-content/dealersites/vehicles/versions/volkswagen/foto890_44434.webp" 
+                        class="img-fluid" style="max-width: 40%; height: auto;" alt="tera">
                 </div>
                 <div class="carousel-caption d-none d-md-block">
-                    <h1 class="display-4 fw-bold">Outra Cidade A</h1> 
-                    <p class="lead">Outra descrição aqui!</p>
+                    <h1 class="display-4 fw-bold"><a class="car-link" href="detalhes.php?car=premium-suv">VW TERA</a></h1> 
+                    <p class="lead">2025</p>
+                    <a class="btn btn-warning cta-button" href="veiculos/tera.php">Ver detalhes</a>
                 </div>
             </div>
 
             <div class="carousel-item">
                 <div class="d-flex justify-content-center align-items-center vh-100 w-100">
-                    <img src="https://assets.gcs.ehi.com/content/enterprise_cros/data/vehicle/bookingCountries/US/CARS/PCAR.doi.768.high.imageSmallThreeQuarterNodePath.png/1740004172813.png" 
-                        class="img-fluid" style="max-width: 40%; height: auto;" alt="Carro Premium Sedã">
+                    <img src="https://toribaveiculos.com.br/wp-content/uploads/2025/01/200-TSI.png" 
+                        class="img-fluid" style="max-width: 40%; height: auto;" alt="tcross">
                 </div>
                 <div class="carousel-caption d-none d-md-block">
-                    <h1 class="display-4 fw-bold">Outra Cidade B</h1>
-                    <p class="lead">Outra descrição aqui!</p>
+                    <h1 class="display-4 fw-bold"><a class="car-link" href="detalhes.php?car=premium-sedan">VW TCROSS</a></h1>
+                    <p class="lead">2024</p>
+                    <a class="btn btn-warning cta-button" href="veiculos/tcross.php">Ver detalhes</a>
                 </div>
             </div>
 
             <div class="carousel-item">
                 <div class="d-flex justify-content-center align-items-center vh-100 w-100">
-                    <img src="https://assets.gcs.ehi.com/content/enterprise_cros/data/vehicle/bookingCountries/US/CARS/WCAR.doi.768.high.imageSmallThreeQuarterNodePath.png/1753220631881.png" 
+                    <img src="https://chevroletorca.com.br/uploads/products/versions/azul-eclipse-1.png" 
                         class="img-fluid" style="max-width: 40%; height: auto;" alt="Carro Grande">
                 </div>
                 <div class="carousel-caption d-none d-md-block">
-                    <h1 class="display-4 fw-bold">Outra Cidade C</h1>
-                    <p class="lead">Outra descrição aqui!</p>
+                    <h1 class="display-4 fw-bold"><a class="car-link" href="detalhes.php?car=carro-grande">s10</a></h1>
+                    <p class="lead">2024</p>
+                    <a class="btn btn-warning cta-button" href="veiculos/s10.php">Ver detalhes</a>
                 </div>
             </div>
 
             <div class="carousel-item">
                 <div class="d-flex justify-content-center align-items-center vh-100 w-100">
-                    <img src="https://assets.gcs.ehi.com/content/enterprise_cros/data/vehicle/bookingCountries/US/CARS/WCAR.doi.768.high.imageSmallThreeQuarterNodePath.png/1753220631881.png" 
+                    <img src="https://www.chevroletnova.com.br/images/versoes/fotos/2025/08/1-0-2026_1754665390_4362.png" 
                         class="img-fluid" style="max-width: 40%; height: auto;" alt="Carro Grande Repetido">
                 </div>
                 <div class="carousel-caption d-none d-md-block">
-                    <h1 class="display-4 fw-bold">Outra Cidade D (Repetido)</h1>
-                    <p class="lead">Outra descrição aqui!</p>
+                    <h1 class="display-4 fw-bold"><a class="car-link" href="detalhes.php?car=carro-grande-2">ONIX</a></h1>
+                    <p class="lead">2024</p>
+                    <a class="btn btn-warning cta-button" href="veiculos/onix.php">Ver detalhes</a>
                 </div>
             </div>
 
@@ -110,5 +119,6 @@
         </button>
         
     </div> <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    
 </body>
 </html>

@@ -20,7 +20,7 @@ if (!isset($_SESSION['usuario_id'])) {
         <div class="card">
             <h1 class="car-title">MODELO DO CARRO</h1>
             <div class="image-wrap">
-                <img class="car-image" src="" alt="CARRO">
+                <img class="car-image" src="https://toribaveiculos.com.br/wp-content/uploads/2025/01/200-TSI.png" alt="CARRO">
             </div>
             <p class="price">R$ 190,00</p>
 

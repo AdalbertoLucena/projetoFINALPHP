@@ -20,7 +20,7 @@ if (!isset($_SESSION['usuario_id'])) {
         <div class="card">
             <h1 class="car-title">MODELO DO CARRO</h1>
             <div class="image-wrap">
-                <img class="car-image" src="" alt="CARRO">
+                <img class="car-image" src="https://storage.googleapis.com/dealersites-content/dealersites/vehicles/versions/volkswagen/foto890_44434.webp" alt="CARRO">
             </div>
             <p class="price">R$ 250.00</p>
 
