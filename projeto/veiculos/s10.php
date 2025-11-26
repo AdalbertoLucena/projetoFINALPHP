@@ -36,7 +36,7 @@ if (!isset($_SESSION['usuario_id'])) {
 
             <form class="reserve-form" method="post" action="reserva.php">
                 <input type="hidden" name="modelo" value="GM S10 (aut/manual) 2024">
-                <input type="hidden" name="diaria" value="10000">
+                <input type="hidden" name="diaria" value="320">
                 <label for="dias">Diárias</label>
                 <input id="dias" name="dias" type="number" min="1" value="1" class="dias-input">
                 <button type="submit" class="btn btn-primary">AFINALIZAR</button>

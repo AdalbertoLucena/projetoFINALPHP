@@ -16,7 +16,7 @@
         <div class="card">
             <h1 class="car-title">Hyundai HB20Ss</h1>
             <div class="image-wrap">
-                <img class="car-image" src="https://cdn-site-seminovos.localiza.com/prd/site/anuncio/323026/hyundai-hb20s-comfort-plus-tgdi-flex-at-10-2024-branco-automatico-seminovo-323026-5bdb2648-1dae-45b6-9deb-da99fdda645e-1.jpg" alt="Hyundai HB20S">
+                <img class="car-image" src="https://production.autoforce.com/uploads/version/profile_image/10092/comprar-comfort-plus-1-0-manual_da62731e72.png" alt="Hyundai HB20S">
             </div>
             <p class="price">R$ 180,00</p>
 

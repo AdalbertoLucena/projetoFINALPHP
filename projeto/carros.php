@@ -13,7 +13,7 @@
     
 
 
-<title>ALUGAR PB</title>
+<title>UNICAR</title>
 
     
 </head>
@@ -28,10 +28,8 @@
         </a>
 
         <nav class="navbar">
-            <a href="#">Home</a>
-            <a href="#">suvs</a>
-            <a href="#">Sedans</a>
-            <a href="#">Sportivoss</a>
+            <a href="index.php">Home</a>
+            
 
         </nav>
 
@@ -43,7 +41,7 @@
 
     <!-- COLOCAR IMAGEN DOS CARROS E OS VALORES -->
     <section class="menu" id="menu">
-        <h2 class="title"><span>catalogo</span></h2>
+        <h2 class="title"><span></span></h2>
         <div class="box-container">
             <div class="box">
                <img src="https://www.localiza.com/brasil-site/geral/Frota/HB2C.png" alt="">

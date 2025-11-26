@@ -98,7 +98,7 @@ header section{
 
 .title {
   font-size: 4rem;
-  color: rgba(77, 209, 117, 0.699);
+  color: yellow;
   text-align: center;
   text-transform: uppercase;
   text-align: center;
@@ -128,7 +128,7 @@ header section{
 }
 
 .menu .box-container .box:hover>*{
-  color: rgba(77, 209, 117, 0.699);
+  color: yellow;
 }
 
 .menu .box-container img{

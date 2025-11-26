@@ -1,0 +1,332 @@
+
+
+body {
+  /* Cor de fundo: fundo preto (muito escuro) */
+  background: #000000;
+  
+  /* Degradê: mistura cores de cima para baixo
+     Começa com cinza escuro 
+     Termina com preto */
+  background: linear-gradient(180deg, #727272 0%, #000000 100%);
+  
+  /* Não deixa rolar o fundo fica fixo mesmo com scroll */
+  background-attachment: fixed;
+  
+  /* Altura total da tela */
+  height: 100vh;
+  
+  /* Remove margem padrão do navegador */
+  margin: 0;
+  
+  /* Tipo de letra padrão */
+  font-family: Arial, Helvetica, sans-serif;
+  
+  /* Cor do texto: branco */
+  color: #fff;
+}
+
+
+/* Centraliza o conteúdo da página */
+
+main.car-page {
+  /* Exibe em coluna  */
+  display: flex;
+  
+  /* Alinha o centro na vertical */
+  align-items: center;
+  
+  /* Alinha o centro na horizontal */
+  justify-content: center;
+  
+  /* Altura total da tela */
+  height: 100vh;
+  
+  /* cria margem  */
+  padding: 2rem 1rem;
+}
+
+
+.card {
+  /* define a largura */
+  max-width: 500px;
+  
+  /* Largura total*/
+  width: 100%;
+  
+  /* espaço dentro da box */
+  padding: 2.5rem 2rem;
+  
+  /* Borda em volta*/
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  
+  /* arredondamento da borda */
+  border-radius: 12px;
+  
+  /* Fundo pouco transparente */
+  background: rgba(0, 0, 0, 0.6);
+  
+  /* sombra para criar perofunfidade */
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+ /*deixa o texto alinhado no centro  */
+.car-title {
+  text-align: center;
+  
+  /* muda o tamanho da letra*/
+  font-size: 1.8rem;
+  
+  /* fonte da letra */
+  font-weight: bold;
+  
+  /* Espaçamento separando proximo elemento */
+  margin-bottom: 1.5rem;
+  
+  /* tira a margem de cima */
+  margin-top: 0;
+  
+  /* muda a cor do texto */ 
+  color: #fff;
+}
+
+
+.description {
+  /* Alinha texto  */
+  text-align: center;
+  
+  /* Espaçamento de cima e baixo */
+  margin: 1.5rem 0;
+  
+  /* Tamanho do texto */
+  font-size: 1.1rem;
+}
+
+.description p {
+  /* Espaço entre paragrafos */
+  margin: 0.75rem 0;
+}
+
+.description strong {
+  /* Cor  */
+  color: #ffcc00;
+  
+  /* fonte da letra */
+  font-weight: bold;
+}
+
+form {
+  /* Largura do form */
+  max-width: 420px;
+  
+  /* Centraliza a margem */
+  margin: 0 auto;
+  
+  /* Alinha texto na esq */
+  text-align: left;
+}
+
+
+
+
+label {
+  /* Exibe em bloco */
+  display: block;
+  
+  /* Espaço de cima */
+  margin-bottom: 0.5rem;
+  
+  /* tamanhado da letra */
+  font-size: 1rem;
+  
+  /* Letra em negrito */
+  font-weight: bold;
+  
+  /* Cor */
+  color: #fff;
+}
+
+
+/* Estilo das box de texto / números */
+
+input[type="number"],
+input[type="text"],
+input[type="hidden"] {
+  /* Largura  */
+  width: 100%;
+  
+  /* Espaçamento  */
+  padding: 0.6rem;
+  
+  /* Espaço de cima  */
+  margin: 0.25rem 0 0.9rem;
+  
+  /* Borda arredondada*/
+  border-radius: 6px;
+  
+  /* estiliza a borda */
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  
+  
+  background: transparent;
+  
+  /* Cor do texto*/
+  color: inherit;
+  
+  /* Fonte  */
+  font-family: inherit;
+}
+
+/* foco quando o cliente clica no campo */
+input[type="number"]:focus,
+input[type="text"]:focus {
+  /* Remove o contorno */
+  outline: none;
+  
+  /* Borda visível */
+  border-color: rgba(255, 255, 255, 0.2);
+  
+  /* Sombra no foco*/
+  box-shadow: 0 0 0 2px rgba(255, 204, 0, 0.2);
+}
+
+
+/* estilo para os botoes da pag */
+
+.btn {
+  /* mostra como bloco */
+  display: inline-block;
+  
+  /* espaamento do botao */
+  padding: 0.8rem 1.2rem;
+  
+  /* Borda arrendond */
+  border-radius: 8px;
+  
+  /* Fonte */
+  font-family: inherit;
+  
+  /* Tamanho da letra */
+  font-size: 1rem;
+  
+  /* Cursor ponteiro */
+  cursor: pointer;
+  
+  /* Transiçao para quando passa o mouse  */
+  transition: all 0.3s ease;
+  
+  /* Remove a borda  */
+  border: none;
+  
+  /* tira o sublinhado*/
+  text-decoration: none;
+  
+  /* Alinha o texto */
+  text-align: center;
+}
+
+
+.btn-primary {
+  /* fundo*/
+  background: #ffcc00;
+  
+  /* Cor do texto */
+  color: #000;
+  
+  /* negrito */
+  font-weight: bold;
+}
+
+/* hover do botao */
+.btn-primary:hover {
+  /* Fundo  */
+  background: #ffb800;
+  
+  /* Sombra de efeito */
+  box-shadow: 0 4px 12px rgba(255, 204, 0, 0.4);
+  
+  /* rotaciona o eixo y) */
+  transform: translateY(-2px);
+}
+
+/* Botão sec */
+.btn {
+  /* Funndo */
+  background: transparent;
+  
+  /* Borda */
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  
+  /* Texto  */
+  color: #fff;
+  
+  /* espessura do texto */
+  font-weight: 600;
+}
+
+/* hover  */
+.btn:hover {
+  /* Borda mais visivel */
+  border-color: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.05);
+  /* Sombra */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  /* movimento para cima */
+  transform: translateY(-2px);
+}
+
+
+
+.botoes-container {
+  /* Exibe em linha (lado a lado) */
+  display: flex;
+  
+  /* Espaço entre botao */
+  gap: 0.75rem;
+  
+  /* Centraliza  */
+  justify-content: center;
+  
+  /* Espaçamento */
+  margin-top: 1rem;
+}
+
+
+/* ajuste para mobile */
+
+@media (max-width: 600px) {
+  /* Card com espamento menor */
+  .card {
+    padding: 1.5rem 1rem;
+    border-radius: 8px;
+  }
+  
+  /* Título menor */
+  .car-title {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+  }
+  /* Botoes embaixo do outro */
+  .botoes-container {
+    flex-direction: column;
+    gap: 0.5rem;
+  } 
+  /* largura do botao 100% */
+  .btn {
+    width: 100%;
+  }
+}
+.text-center {
+  text-align: center;
+}
+.mt-1 {
+  margin-top: 0.5rem;
+}
+.mt-2 {
+  margin-top: 1rem;
+}
+.mb-1 {
+  margin-bottom: 0.5rem;
+}
+.mb-2 {
+  margin-bottom: 1rem;
+}

@@ -38,7 +38,7 @@
 
             <div class="carousel-item">
                 <div class="d-flex justify-content-center align-items-center vh-100 w-100">
-                    <img src="https://cdn-site-seminovos.localiza.com/prd/site/anuncio/323026/hyundai-hb20s-comfort-plus-tgdi-flex-at-10-2024-branco-automatico-seminovo-323026-5bdb2648-1dae-45b6-9deb-da99fdda645e-1.jpg" 
+                    <img src="https://production.autoforce.com/uploads/version/profile_image/10092/comprar-comfort-plus-1-0-manual_da62731e72.png" 
                         class="img-fluid" style="max-width: 40%; height: auto;" alt="Hyundai">
                 </div>
                 <div class="carousel-caption d-none d-md-block">

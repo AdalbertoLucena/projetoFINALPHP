@@ -1,0 +1,135 @@
+
+body{
+  /* tira espaço em branco nas bordas */
+  margin:0;
+  font-family: Arial, Helvetica, sans-serif;
+  color:#222;
+  background: linear-gradient(180deg, #727272 0%, #000000 100%);
+}
+
+.hero{
+  /* espacamento da box*/
+  padding:40px 16px;
+  text-align:center;
+  color:#fff;
+}
+.hero h1{
+  /* remove o esao externo*/
+  margin:0 0 8px 0;
+}
+
+/* estilo do paragrafo */
+.hero .lead{
+  margin:0;
+  /* deixa um pouco transparente */
+  opacity:0.9;
+}
+
+.container{
+  /* limita a largura */
+  max-width:1000px;
+  /* centraliza o container */
+  margin:24px auto;
+  /* adc espaço interno nas laterais */
+  padding:0 16px;
+}
+
+/* deixa os elementos lado a lado */
+.about{
+  display:flex;
+  /* adiciona espaço  */
+  gap:12px;
+  /* joga os elementos para proxima linha caso n caibam*/
+  flex-wrap:wrap;
+}
+
+/* Estilo de cada cartao*/
+.card{
+  background:#1a1a1a;
+  color:#fff;
+  /*  espaço  */
+  padding:12px;
+  /* arredonda as bordas*/
+  border-radius:8px;
+  /* o card cresce igual e com largura maxima*/
+  flex:1 1 300px;
+}
+
+.card h2{
+  /*remove espaço de cima */
+  margin-top:0;
+}
+
+
+.team{
+  /* adiciona espaço de cima */
+  margin-top:18px;
+}
+
+/* Lista da equipe */
+.team-list{
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap;
+}
+
+/* Estilo de cada nome de membro */
+.member{
+  background:#111;
+  padding:10px;
+  border-radius:6px;
+  color:#fff;
+  flex:1 1 150px;
+}
+
+.faq{
+  margin-top:18px;
+}
+
+/* box que espande */
+details{
+  background:#111;
+  color:#fff;
+  padding:10px;
+  border-radius:6px;
+  margin-bottom:8px;
+}
+
+/* Estilo da tag */
+summary{
+  /* muda o cursor quando passa em cima  */
+  cursor:pointer;
+}
+
+/* botoes de açao */
+.cta{
+  margin-top:18px;
+  display:flex;
+  gap:8px;
+  /* centraliza os botoes */
+  justify-content:center;
+}
+
+.btn{
+  display:inline-block;
+  /* espaço nterno no botão */
+  padding:10px 14px;
+  background:#ffcc00;
+  color:#000;
+  border-radius:6px;
+  /* tira o sublinhado */
+  text-decoration:none;
+  /* texto em negrito */
+  font-weight:bold;
+}
+
+@media (max-width:600px){
+  coloca os items em coluna */
+  .about{
+    flex-direction:column;
+  }
+  .team-list{
+    flex-direction:column;
+  }
+}
+
