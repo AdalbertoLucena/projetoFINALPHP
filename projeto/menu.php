@@ -38,7 +38,7 @@ if (!isset($_SESSION)) session_start();
 <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
   <div class="container-fluid position-relative">
 
-    <a class="navbar-brand fs-3 fw-bold" href="#">Logo</a>
+    <a class="navbar-brand fs-3 fw-bold" href="#">UNICAR</a>
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCenter">
       <span class="navbar-toggler-icon"></span>
