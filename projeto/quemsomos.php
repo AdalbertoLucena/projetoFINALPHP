@@ -3,6 +3,20 @@
 <html lang="pt-br">
 <!-- Comentário: a tag <head> contém informações sobre a página -->
 <head>
+    
+
+
+
+<!-- Comentário: div com class="cta" (call-to-action = chamada para ação) -->
+        <div class="cta">
+            <!-- Comentário: links estilizados como botões para navegar para outras páginas -->
+            <a class="btn" href="index.php">Home</a>
+            <a class="btn" href="faleconosco.php">Fale Conosco</a>
+        </div>
+
+
+
+
     <!-- Comentário: define o tipo de caracteres (UTF-8 = letras do mundo inteiro) -->
     <meta charset="UTF-8">
     <!-- Comentário: viewport ajusta o site para celulares -->
@@ -88,12 +102,7 @@
             </details>
         </section>
 
-        <!-- Comentário: div com class="cta" (call-to-action = chamada para ação) -->
-        <div class="cta">
-            <!-- Comentário: links estilizados como botões para navegar para outras páginas -->
-            <a class="btn" href="index.php">Início</a>
-            <a class="btn" href="faleconosco.php">Fale Conosco</a>
-        </div>
+        
 
     </main>
 
