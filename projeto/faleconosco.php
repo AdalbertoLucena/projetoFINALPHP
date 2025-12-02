@@ -27,7 +27,8 @@ echo "<h1 style='text-align:center; color:#ffcc00; margin-top:20px;'>Fale Conosc
     }
 
     input[type="text"],
-    input[type="email"] {
+    input[type="email"],
+    textarea {
         width: 100%;
         padding: 10px;
         margin-bottom: 15px;
@@ -35,13 +36,21 @@ echo "<h1 style='text-align:center; color:#ffcc00; margin-top:20px;'>Fale Conosc
         border: 1px solid rgba(255,255,255,0.2);
         background: rgba(255,255,255,0.05);
         color: #fff;
+        font-family: inherit;
+        font-size: 1rem;
     }
 
     input[type="text"]:focus,
-    input[type="email"]:focus {
+    input[type="email"]:focus,
+    textarea:focus {
         outline: none;
         border-color: #ffcc00;
         box-shadow: 0 0 5px #ffcc00;
+    }
+
+    textarea {
+        resize: vertical;
+        min-height: 100px;
     }
 
     .form-check {
@@ -80,14 +89,15 @@ echo "<h1 style='text-align:center; color:#ffcc00; margin-top:20px;'>Fale Conosc
         <label for="email">E-mail:</label>
         <input type="email" id="email" name="email" placeholder="seu@email.com" required>
 
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" placeholder="Escreva sua mensagem..." required></textarea>
+
         <div class="form-check">
             <input type="checkbox" id="subscribe" name="subscribe">
             <label for="subscribe">Quero receber novidades</label>
         </div>
 
-        <button type="submit" class="btn-submit">Enviar</button>
+        
     </form>
+    <a href="enviado.php"> <button type="submit" class="btn-submit">Enviar</button>
 </div>
-
-
-
