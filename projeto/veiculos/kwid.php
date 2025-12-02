@@ -15,6 +15,7 @@ if (!isset($_SESSION['usuario_id'])) {
     <title>Hyundai - Alugar</title>
     <link rel="stylesheet" href="hyundai.css">
 </head>
+
 <body>
     <main class="car-page">
         <div class="card">

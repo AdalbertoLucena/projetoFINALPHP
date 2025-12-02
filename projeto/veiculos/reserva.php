@@ -33,6 +33,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST'){
   <link rel="stylesheet" href="hyundai.css">
   <link rel="stylesheet" href="reserva.css">
 </head>
+
 <body>
   <main class="car-page">
     <div class="card">
@@ -59,7 +60,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST'){
         </div>
         <div class="botoes-container">
           <a href="hyundai.php" class="btn">Voltar</a>
-          <a href="#" class="btn btn-primary">Finalizar Reserva</a>
+          <a href="../confirmacao.php" class="btn btn-primary">Finalizar Reserva</a>
         </div>
       <?php endif; ?>
 
