@@ -25,7 +25,7 @@ if (mysqli_stmt_execute($stmt)) {
     // apagar sessão
     session_destroy();
 
-    header("Location: ../index.php");
+    header("Location: index.php");
     exit;
 
 } else {
