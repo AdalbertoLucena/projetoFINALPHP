@@ -92,7 +92,7 @@
         <div class="cta">
             <!-- Comentário: links estilizados como botões para navegar para outras páginas -->
             <a class="btn" href="index.php">Início</a>
-            <a class="btn" href="contato.php">Fale Conosco</a>
+            <a class="btn" href="faleconosco.php">Fale Conosco</a>
         </div>
 
     </main>
