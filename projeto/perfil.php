@@ -51,11 +51,38 @@ if (!empty($usuario['foto']) && file_exists("../cadastro/" . $usuario['foto'])) 
         padding: 30px;
         border-radius: 12px;
         box-shadow: 0 0 15px rgba(255,255,255,0.1);
+        position: relative; /* IMPORTANTE para o botão ficar dentro */
     }
+
+    /* --- BOTÃO X DENTRO DO QUADRADO CINZA --- */
+    .voltar {
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        background: #b83232;
+        color: white;
+        font-size: 22px;
+        font-weight: bold;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: none;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.2s;
+    }
+    .voltar:hover {
+        background: #7a2121;
+    }
+
     .foto {
         text-align: center;
         margin-bottom: 20px;
+        margin-top: 20px; /* afastar da posição do X */
     }
+
     .foto img {
         width: 140px;
         height: 140px;
@@ -105,6 +132,9 @@ if (!empty($usuario['foto']) && file_exists("../cadastro/" . $usuario['foto'])) 
 <body>
 
 <div class="container">
+
+    <!-- Botão X dentro do quadrado cinza -->
+    <button class="voltar" onclick="window.location.href='index.php'">X</button>
 
     <div class="foto">
         <img src="<?= $foto ?>" alt="Foto do usuário">
