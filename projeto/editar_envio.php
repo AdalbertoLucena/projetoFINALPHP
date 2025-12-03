@@ -18,7 +18,7 @@ $novoArquivo = null;
 // Upload da foto (se enviada)
 if (!empty($_FILES['foto']['name'])) {
 
-    $pasta = "../cadastro/fotos/";
+    $pasta = "../cadastro/img/";
     if (!is_dir($pasta)) mkdir($pasta, 0777, true);
 
     $nomeFoto = "foto_" . $id . "_" . time() . ".jpg";

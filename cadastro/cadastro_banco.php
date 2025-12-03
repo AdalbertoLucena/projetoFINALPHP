@@ -32,7 +32,7 @@ function mover_foto($vetor_foto) {
     if ($partes[0] != "image") return null;
 
 
-/*Cria um nome único para a foto, ex: 20250318094521_8374.jpg*/ 
+/*Faz a criptodrafia da foto único, ex: 20250318094521_8374.jpg*/ 
     $nome_arquivo = date('YmdHis') . "_" . rand(1000, 9999) . ".jpg";
 
 
