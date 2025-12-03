@@ -50,8 +50,10 @@ if ($checkStmt = $conn->prepare($checkSql)) {
 
 
 
-// esse bloco inserie um novo usuário (mantendo compatibilidade com seu banco,
-//  aqui e onde ocorre realmente o cadastro)
+/*  
+    esse bloco inserie um novo usuário (mantendo compatibilidade com seu banco,
+    aqui e onde ocorre realmente o cadastro)
+*/
 $insertSql = "INSERT INTO novos (nome, email, senha) VALUES (?, ?, ?)";
 if ($ins = $conn->prepare($insertSql)) {
     $ins->bind_param("sss", $nome, $email, $senha);

@@ -1,32 +1,55 @@
-<?php
+<?php //cadastro_log - aqui é onde faz o login 
+
+
+
+//inicia a sessao 
 session_start();
+
+//inclui o arquivo onde esta a con(conexao com o banco)
 include_once __DIR__ . "/cadastro_banco.php";
 
-
+//pegar mensagens de erro da sessao(se existirem)
 $erro = $_SESSION['erro'] ?? '';
 unset($_SESSION['erro']);
 
+
+// Aqui verifica se o formulario foi enviado e se foi atraves do POST
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+
+   // Lê os valores digitados
     $email = $_POST['email'] ?? '';
     $senha = $_POST['senha'] ?? '';
 
+
+//Aqui procura o usuario que esta logado, no banco 
     $stmt = mysqli_prepare($conn, "SELECT * FROM novos WHERE email = ?");
     mysqli_stmt_bind_param($stmt, "s", $email);
     mysqli_stmt_execute($stmt);
     $res = mysqli_stmt_get_result($stmt);
 
+
+ //Verifica se achou exatamente 1 usuario
     if ($res && mysqli_num_rows($res) === 1) {
+
+        //pega os dados do usuario em formato de array 
         $user = mysqli_fetch_assoc($res);
+
+        //Verifica a senha que foi colocada 
         if (password_verify($senha, $user['senha'])) {
+            
+            //login bem sucedido, vai para index
             $_SESSION['usuario_id'] = $user['id'];
             $_SESSION['usuario_nome'] = $user['nome'];
             header("Location: ../projeto/index.php");
             exit;
+
+        //erro de senha, senha incorreta
         } else {
             $_SESSION['erro'] = "Senha incorreta!";
             header("Location: cadastro_log.php");
             exit;
         }
+        //usuario nao encontrado 
     } else {
         $_SESSION['erro'] = "Usuário não encontrado!";
         header("Location: cadastro_log.php");
