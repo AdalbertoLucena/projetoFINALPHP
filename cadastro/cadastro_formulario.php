@@ -1,22 +1,34 @@
 <?php
+
+//Inicia a sessão.
+//Isso permite guardar informações do usuário enquanto ele navega no site (ex.: nome, id, foto).
 session_start();
 include_once __DIR__ . "/cadastro_banco.php";
 
+
+/*Verifica se o formulário foi enviado via POST Ou seja,
+só executa o cadastro se o usuário clicou em Enviar no formulário.*/
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
-    // Validar campos obrigatórios
+
+
+    //Confere se nome, email e senha foram preenchidos
     if (empty($_POST['nome']) || empty($_POST['email']) || empty($_POST['senha'])) {
         $_SESSION['msg'] = "Preencha todos os campos!";
         header("Location: cadastro_formulario.php");
         exit;
     }
 
+//Recebe e limpa os dados do formulário
     $nome = trim($_POST['nome']);
     $endereco = trim($_POST['endereco']);
     $telefone = trim($_POST['telefone']);
     $email = trim($_POST['email']);
     $senha = $_POST['senha'];
     $data_nascimento = $_POST['data_nascimento'];
+
+
+
 
     // mover foto usando a função correta
     $foto = mover_foto($_FILES['foto']); // retorna nome do arquivo ou null
@@ -25,6 +37,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (empty($foto)) {
         $foto = "padrao.png"; // arquivo que deve existir em ../cadastro/img/
     }
+
 
     // hash da senha
     $senha_hash = password_hash($senha, PASSWORD_DEFAULT);
@@ -41,22 +54,32 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         exit;
     }
 
-    // Inserir no banco
+    //Prepara o INSERT para cadastrar o novo usuário
     $stmt = mysqli_prepare($conn, "INSERT INTO novos (nome, endereco, telefone, email, senha, data_nascimento, foto) VALUES (?, ?, ?, ?, ?, ?, ?)");
     mysqli_stmt_bind_param($stmt, "sssssss", $nome, $endereco, $telefone, $email, $senha_hash, $data_nascimento, $foto);
+
+
+ /*Tenta inserir no banco
+Se der erro , guarda mensagem de erro
+volta ao formulário*/
     if (!mysqli_stmt_execute($stmt)) {
         $_SESSION['msg'] = "Erro ao salvar no banco: " . mysqli_stmt_error($stmt);
         header("Location: cadastro_formulario.php");
         exit;
     }
 
-    // criar sessão
+    /*Cria sessão para manter o usuário logado, Guarda:
+ID do usuário cadastrado,nome do usuário, foto 
+Assim ele já entra automaticamente no sistema. */
     $_SESSION['usuario_id'] = mysqli_insert_id($conn);
     $_SESSION['usuario_nome'] = $nome;
     $_SESSION['foto'] = $foto;
 
     mysqli_stmt_close($stmt);
 
+
+    
+//volta para o index
     header("Location: ../projeto/index.php");
     exit;
 }
