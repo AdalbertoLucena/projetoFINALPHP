@@ -25,7 +25,8 @@ if (!isset($_SESSION['usuario_id'])) {
             <p class="price">R$ 320,00</p>
 
             <div class="description">
-                <p>Descrição curta: Hyundai HB20S Comfort Plus com baixo consumo, acabamento interno em tecido premium e itens de segurança completos. Ideal para viagens e uso diário.</p>
+                <p>Descrição curta: A Chevrolet S10 é uma picape de porte médio produzida no Brasil desde 1995, conhecida pela sua robustez e força, sendo um dos modelos mais longevos da marca no país. A linha 2026, em particular, trouxe atualizações significativas em motorização, tecnologia e segurança. 
+</p>
                 <ul class="features">
                     <li><strong>Ano:</strong> 2024</li>
                     <li><strong>Combustível:</strong> Flex</li>

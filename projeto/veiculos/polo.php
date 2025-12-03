@@ -25,7 +25,8 @@ if (!isset($_SESSION['usuario_id'])) {
             <p class="price">R$ 130,00</p>
 
             <div class="description">
-                <p>Descrição curta: Hyundai HB20S Comfort Plus com baixo consumo, acabamento interno em tecido premium e itens de segurança completos. Ideal para viagens e uso diário.</p>
+                <p>Descrição curta: O Volkswagen Polo é um dos hatches compactos mais vendidos do Brasil, conhecido por sua dirigibilidade superior, suspensão bem ajustada, e uma gama de motores que equilibram eficiência e desempenho, incluindo opções turbo. 
+</p>
                 <ul class="features">
                     <li><strong>Ano:</strong> 2024</li>
                     <li><strong>Combustível:</strong> Flex</li>

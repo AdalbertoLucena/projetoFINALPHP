@@ -26,7 +26,7 @@ if (!isset($_SESSION['usuario_id'])) {
             <p class="price">R$ 200,00</p>
 
             <div class="description">
-                <p>Descrição curta: Hyundai HB20S Comfort Plus com baixo consumo, acabamento interno em tecido premium e itens de segurança completos. Ideal para viagens e uso diário.</p>
+                <p>Descrição curta:  Hyundai HB20S é um sedã compacto que se destaca pelo seu design moderno, bom pacote de equipamentos e uma motorização turbo eficiente nas versões mais caras, sendo uma opção popular no mercado brasileiro.</p>
                 <ul class="features">
                     <li><strong>Ano:</strong> 2024</li>
                     <li><strong>Combustível:</strong> Flex</li>

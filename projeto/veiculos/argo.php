@@ -29,7 +29,7 @@ if (!isset($_SESSION['usuario_id'])) {
             <p class="price">R$ 135,00</p>
 
             <div class="description">
-                <p>Descrição curta: Hyundai HB20S Comfort Plus com baixo consumo, acabamento interno em tecido premium e itens de segurança completos. Ideal para viagens e uso diário.</p>
+                <p>Descrição curta: O Fiat Argo é um hatchback compacto que se destaca pelo seu bom espaço interno, design moderno e uma gama de motores Firefly eficientes, sendo uma escolha popular para uso urbano e como primeiro carro.</p>
                 <ul class="features">
                     <li><strong>Ano:</strong> 2024</li>
                     <li><strong>Combustível:</strong> Flex</li>

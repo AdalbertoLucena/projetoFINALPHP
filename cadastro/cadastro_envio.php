@@ -2,7 +2,7 @@
 // cadastro_envio.php - insere novo usuário no banco
 
 
-
+//inivia a sessão 
 if (session_status() === PHP_SESSION_NONE) {
     session_set_cookie_params(['path' => '/']);
     session_start();

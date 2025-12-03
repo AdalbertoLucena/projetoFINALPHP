@@ -27,7 +27,7 @@ if (!isset($_SESSION['usuario_id'])) {
             <p class="price">R$ 189,99</p>
 
             <div class="description">
-                <p>Descrição curta: Hyundai HB20S Comfort Plus com baixo consumo, acabamento interno em tecido premium e itens de segurança completos. Ideal para viagens e uso diário.</p>
+                <p>Descrição curta: O objetivo da versão Sport, ou o pacote visual oferecido na linha 2020, era conferir um visual mais arrojado ao sedã, que geralmente tem um apelo mais familiar.</p>
                 <ul class="features">
                     <li><strong>Ano:</strong> 2024</li>
                     <li><strong>Combustível:</strong> Flex</li>

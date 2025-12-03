@@ -27,7 +27,7 @@ if (!isset($_SESSION['usuario_id'])) {
             <p class="price">R$ 120,00</p>
 
             <div class="description">
-                <p>Descrição curta: Hyundai HB20S Comfort Plus com baixo consumo, acabamento interno em tecido premium e itens de segurança completos. Ideal para viagens e uso diário.</p>
+                <p>Descrição curta: O Volkswagen Gol é um dos carros mais icônicos da história automobilística brasileira, sendo o carro mais vendido do país por 27 anos consecutivos.</p>
                 <ul class="features">
                     <li><strong>Ano:</strong> 2024</li>
                     <li><strong>Combustível:</strong> Flex</li>

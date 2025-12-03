@@ -1,7 +1,7 @@
 <?php
 
 /*
-Dados da conexão com o banco Aqui você define:
+Dados da conexão com o banco Aqui se define:
 Servidor do banco → localhost
 Nome do banco de dados → clientes
 Usuário → root

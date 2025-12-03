@@ -28,7 +28,7 @@ if (!isset($_SESSION['usuario_id'])) {
             <p class="price">R$ 150,00</p>
 
             <div class="description">
-                <p>Descrição curta: Hyundai HB20S Comfort Plus com baixo consumo, acabamento interno em tecido premium e itens de segurança completos. Ideal para viagens e uso diário.</p>
+                <p>Descrição curta: O Fiat Cronos é um sedã compacto que se destaca no mercado brasileiro e argentino, principalmente pelo seu amplo porta-malas de 525 litros e pelo bom custo-benefício que oferece, sendo uma opção popular para quem busca espaço e economia.</p>
                 <ul class="features">
                     <li><strong>Ano:</strong> 2024</li>
                     <li><strong>Combustível:</strong> Flex</li>
