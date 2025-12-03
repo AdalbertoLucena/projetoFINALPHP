@@ -59,7 +59,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     mysqli_stmt_bind_param($stmt, "sssssss", $nome, $endereco, $telefone, $email, $senha_hash, $data_nascimento, $foto);
 
 
- /*Tenta inserir no banco
+ /*Tenta inserir no banco o USUARIO 
 Se der erro , guarda mensagem de erro
 volta ao formulário*/
     if (!mysqli_stmt_execute($stmt)) {

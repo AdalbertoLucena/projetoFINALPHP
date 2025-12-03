@@ -89,15 +89,17 @@ button:hover { background: #666; }
 .cadastro-texto a:hover { color: #ff4444; }
 </style>
 </head>
+
+<!--verifica se a variável $erro não está vazia.-->
+<?php if (!empty($erro)): ?>
+    <div class="erro"><?php echo $erro; ?></div>
+<?php endif; ?>
+
 <body>
 
 <div class="box">
 <a href="../projeto/index.php" class="fechar">×</a>
 <h2>Login</h2>
-
-<?php if (!empty($erro)): ?>
-    <div class="erro"><?php echo $erro; ?></div>
-<?php endif; ?>
 
 <form method="POST">
 <input type="email" name="email" placeholder="Seu email" required>

@@ -6,6 +6,7 @@ if (!isset($_SESSION['usuario_id'])) {
     exit;
 }
 
+//inclui o arquivo que esta a conexao com o banco de dados 
 include_once "../cadastro/cadastro_banco.php";
 
 $id = $_SESSION['usuario_id'];
