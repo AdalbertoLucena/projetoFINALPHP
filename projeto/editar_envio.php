@@ -2,8 +2,7 @@
 session_start();
 include_once "../cadastro/cadastro_banco.php";
 
-
-// Se o usuário não estiver logado, é redirecionado para a página de login.
+// Se o usuário não estiver logado → volta para login
 if (!isset($_SESSION['usuario_id'])) {
     header("Location: ../cadastro/cadastro_log.php");
     exit;
@@ -11,42 +10,46 @@ if (!isset($_SESSION['usuario_id'])) {
 
 $id = $_SESSION['usuario_id'];
 
-
-//Recebe os dados do formulário 
+// Recebe dados do formulário
 $nome = $_POST['nome'] ?? '';
 $telefone = $_POST['telefone'] ?? '';
 $endereco = $_POST['endereco'] ?? '';
 
-
-//Verifica se o usuário enviou uma foto nova.
+// Variável que vai guardar o caminho da nova foto
 $novoArquivo = null;
 
-// Upload da foto (se enviada)
+// --- UPLOAD DA FOTO ---
 if (!empty($_FILES['foto']['name'])) {
 
-    //Se a pasta de imagens não existir, ela é criada.
-
+    // Pasta onde as fotos serão salvas
     $pasta = "../cadastro/img/";
-    if (!is_dir($pasta)) mkdir($pasta, 0777, true);
 
-    //Gera nome único para a foto
+    // Cria a pasta se não existir
+    if (!is_dir($pasta)) {
+        mkdir($pasta, 0777, true);
+    }
+
+    // Nome único para a nova foto
     $nomeFoto = "foto_" . $id . "_" . time() . ".jpg";
     $caminhoFoto = $pasta . $nomeFoto;
 
-    //Move a foto enviada para o servidor
+    // Move a foto enviada para a pasta correta
     if (move_uploaded_file($_FILES['foto']['tmp_name'], $caminhoFoto)) {
-        $novoArquivo = "fotos/" . $nomeFoto;
+
+        // Caminho que será salvo no banco
+        // OBS: isso fica relativo à pasta do perfil.php
+        $novoArquivo = "img/" . $nomeFoto;
     }
 }
 
-
-// Se o usuário enviou foto → atualiza tudo
+// Se enviou foto → atualiza tudo
 if ($novoArquivo) {
     $sql = "UPDATE novos SET nome=?, telefone=?, endereco=?, foto=? WHERE id=?";
     $stmt = mysqli_prepare($conn, $sql);
     mysqli_stmt_bind_param($stmt, "ssssi", $nome, $telefone, $endereco, $novoArquivo, $id);
-} else { 
-    // Sem foto → atualiza sem mexer na foto
+
+} else {
+    // Sem foto → não mexe no campo foto
     $sql = "UPDATE novos SET nome=?, telefone=?, endereco=? WHERE id=?";
     $stmt = mysqli_prepare($conn, $sql);
     mysqli_stmt_bind_param($stmt, "sssi", $nome, $telefone, $endereco, $id);
@@ -57,3 +60,4 @@ mysqli_stmt_execute($stmt);
 // Redireciona de volta ao perfil
 header("Location: perfil.php");
 exit;
+?>
