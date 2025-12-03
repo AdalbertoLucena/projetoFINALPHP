@@ -48,7 +48,7 @@ if (!isset($_SESSION)) session_start();
       <ul class="navbar-nav">
         <li class="nav-item"><a class="nav-link active" href="carros.php">Ofertas</a></li>
         <li class="nav-item"><a class="nav-link" href="quemsomos.php">Quem somos</a></li>
-        <li class="nav-item"><a class="nav-link" href="faleconosco.php">Fidelizar</a></li>
+        <li class="nav-item"><a class="nav-link" href="faleconosco.php">Fale Conosco</a></li>
       </ul>
     </div>
 
