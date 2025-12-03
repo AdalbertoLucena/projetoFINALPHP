@@ -82,7 +82,8 @@ echo "<h1 style='text-align:center; color:#ffcc00; margin-top:20px;'>Fale Conosc
 </style>
 
 <div class="contact-form">
-    <form action="/action_page.php" method="post">
+    <form action="enviado.php" method="post">
+
         <label for="nome">Nome:</label>
         <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
 
@@ -97,7 +98,8 @@ echo "<h1 style='text-align:center; color:#ffcc00; margin-top:20px;'>Fale Conosc
             <label for="subscribe">Quero receber novidades</label>
         </div>
 
-        
+        <!-- BOTÃO CORRETO -->
+        <button type="submit" class="btn-submit">Enviar</button>
+
     </form>
-    <a href="enviado.php"> <button type="submit" class="btn-submit">Enviar</button>
 </div>

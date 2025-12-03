@@ -4,15 +4,14 @@
 function fmtBR($n){
     return 'R$ '.number_format((float)$n, 2, ',', '.');
 }
-//
-<!-- Recebe os dados do formulario -->
+
 $modelo = isset($_REQUEST['modelo']) ? urldecode($_REQUEST['modelo']) : 'Veículo';
 $diaria = isset($_REQUEST['diaria']) ? floatval(str_replace(',', '.', $_REQUEST['diaria'])) : 0;
 $dias = 1;
 $total = null;
 
 
-<!-- Se o formulário foi enviado calcula o total -->
+
 if ($_SERVER['REQUEST_METHOD'] === 'POST'){
     $modelo = $_POST['modelo'] ?? $modelo;
     $diaria = floatval(str_replace(',', '.', $_POST['diaria'] ?? $diaria));
